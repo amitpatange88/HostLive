@@ -1,0 +1,15 @@
+﻿Installing assembly 'C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.InstallLog
+   assemblypath = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe
+   logtoconsole = 
+Installing service HostLive...
+Service HostLive has been successfully installed.
+Creating EventLog source HostLive in log Application...
+Committing assembly 'C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.InstallLog
+   assemblypath = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe
+   logtoconsole = 

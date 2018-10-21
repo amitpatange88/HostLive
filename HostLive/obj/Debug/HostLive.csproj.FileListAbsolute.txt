@@ -1,0 +1,9 @@
+C:\E\VS-Programs\HostLive\HostLive\HostLive\bin\HostLive.dll.config
+C:\E\VS-Programs\HostLive\HostLive\HostLive\bin\HostLive.dll
+C:\E\VS-Programs\HostLive\HostLive\HostLive\bin\HostLive.pdb
+C:\E\VS-Programs\HostLive\HostLive\HostLive\bin\Newtonsoft.Json.dll
+C:\E\VS-Programs\HostLive\HostLive\HostLive\bin\Org.Apollo.Utility.dll
+C:\E\VS-Programs\HostLive\HostLive\HostLive\bin\Newtonsoft.Json.xml
+C:\E\VS-Programs\HostLive\HostLive\HostLive\obj\Debug\HostLive.dll
+C:\E\VS-Programs\HostLive\HostLive\HostLive\obj\Debug\HostLive.pdb
+C:\E\VS-Programs\HostLive\HostLive\HostLive\obj\Debug\HostLive.csprojResolveAssemblyReference.cache

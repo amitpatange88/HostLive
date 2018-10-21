@@ -1,0 +1,14 @@
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe.config
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.pdb
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLive.dll
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\Org.Apollo.Utility.dll
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\Newtonsoft.Json.dll
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLive.pdb
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLive.dll.config
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\Newtonsoft.Json.xml
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\obj\Debug\HostLiveWindowsService.csprojResolveAssemblyReference.cache
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\obj\Debug\HostLiveWindowsService.exe
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\obj\Debug\HostLiveWindowsService.pdb
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\obj\Debug\HostLiveWindowsService.ProjectInstaller.resources
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\obj\Debug\HostLiveWindowsService.csproj.GenerateResource.Cache
