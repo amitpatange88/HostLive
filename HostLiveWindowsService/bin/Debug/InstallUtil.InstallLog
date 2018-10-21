@@ -12,3 +12,10 @@ The file is located at C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService
 The Commit phase completed successfully.
 
 The transacted install has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe assembly's progress.
+The file is located at C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.InstallLog.
+
+The uninstall has completed.

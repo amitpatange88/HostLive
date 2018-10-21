@@ -13,3 +13,11 @@ Affected parameters are:
    logfile = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.InstallLog
    assemblypath = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe
    logtoconsole = 
+Uninstalling assembly 'C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.InstallLog
+   assemblypath = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe
+Removing EventLog source HostLive.
+Service HostLive is being removed from the system...
+Service HostLive was successfully removed from the system.

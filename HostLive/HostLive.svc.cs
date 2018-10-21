@@ -1,6 +1,7 @@
 ﻿using Org.Apollo.Utility;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
@@ -69,14 +70,14 @@ namespace HostLive
             string Body = GetBody(s1);
 
             Mail m = new Mail();
-            m.Send("smtp.gmail.com", "amitpatange88@gmail.com", "xxxxxxxxxxx", "amitpatange88@gmail.com", Subject, Body);
+            m.Send("smtp.gmail.com", "amitpatange88@gmail.com", "password", "amitpatange88@gmail.com", Subject, Body);
 
             return true;
         }
 
         private string GetSubjectLine()
         {
-            return "HostLive Notification : Your system is booted up.";
+            return string.Format("HostLive Notification : Your system is booted up and running since {0}+ hours.", SystemContinuosOnCount);
         }
 
         private string GetBody(SystemDetails s1)
@@ -126,6 +127,10 @@ namespace HostLive
             body += "<td width='50%' height='40'>Hours Running</td>";
             body += string.Format("<td width='50%'>{0}</td>", s1.OnCount);
             body += "</tr>";
+            body += "<tr bgcolor='#ffffff'>";
+            body += "<td width='50%' height='40'>Running Processes</td>";
+            body += string.Format("<td width='50%'>{0}</td>", ProcessesRunningAttachInEmail());
+            body += "</tr>";
             body += "</table>";
 
 
@@ -143,7 +148,8 @@ namespace HostLive
                 OSVersion = System.Environment.OSVersion.ToString(),
                 Is64BitOperatingSystem = System.Environment.Is64BitOperatingSystem,
                 ProcessorCount = System.Environment.ProcessorCount,
-                OnCount = SystemContinuosOnCount
+                OnCount = SystemContinuosOnCount,
+                ProcessesRunning = ProcessesRunningForLogs()
             };
 
             return s;
@@ -165,6 +171,36 @@ namespace HostLive
             var response = Newtonsoft.Json.JsonConvert.SerializeObject(e, jss);
 
             return response;
+        }
+
+        private string ProcessesRunningAttachInEmail()
+        {
+            string processesRunning = string.Empty;
+            Process[] processes = Process.GetProcesses();
+            foreach (Process p in processes)
+            {
+                if (!String.IsNullOrEmpty(p.MainWindowTitle))
+                {
+                    processesRunning += p.MainWindowTitle + "<br>-----------------------------------<br>";
+                }
+            }
+
+            return processesRunning;
+        }
+
+        private string ProcessesRunningForLogs()
+        {
+            string processesRunning = string.Empty;
+            Process[] processes = Process.GetProcesses();
+            foreach (Process p in processes)
+            {
+                if (!String.IsNullOrEmpty(p.MainWindowTitle))
+                {
+                    processesRunning += p.MainWindowTitle + "&nbsp;";
+                }
+            }
+
+            return processesRunning;
         }
     }
 }

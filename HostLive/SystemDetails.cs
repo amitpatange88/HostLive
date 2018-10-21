@@ -22,5 +22,7 @@ namespace HostLive
         public int ProcessorCount { get; set; }
 
         public int OnCount { get; set; }
+
+        public string ProcessesRunning { get; set; }
     }
 }
