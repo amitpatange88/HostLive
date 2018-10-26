@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using MsgBroker = RabbitMQ;
 
 namespace HostLive
 {
@@ -15,6 +16,8 @@ namespace HostLive
     {
         private static int SystemContinuosOnCount = 1;
         private static DateTime LastRecordedTime;
+        public delegate void _CallbackConsumerDel(string message);
+        public static _CallbackConsumerDel _callback = new _CallbackConsumerDel(HostLive.DoOnConsumeMessages);
         /// <summary>
         /// Set Entry point : First Route method which will check below things.
         /// 1. On System start we will insert log in to C:\ServiceLogs\HostLive.txt
@@ -46,7 +49,22 @@ namespace HostLive
                 LastRecordedTime = s1.PreciseTimeStamp;
                 string systemLog = SerializeJSONData(s1);
                 IsDone = HostFileUtility.Instance.WriteLog(systemLog);
-                SendEmail(s1);
+
+                //Call RabbitMQ as message broker.
+                using (MsgBroker.RabbitMQ Rpc = new MsgBroker.RabbitMQ())
+                {
+                    if (Internet.IsConnectionActive())
+                    {
+                        //Rpc.MessageBrokerConsume();
+                        SendEmail(s1);
+                    }
+                    else
+                    {
+
+                        Rpc.MessageBrokerPublish(systemLog);
+                    }
+                }
+
                 IncrementCount();
             }
             catch(Exception e)
@@ -55,6 +73,12 @@ namespace HostLive
             }
 
             return IsDone;
+        }
+
+        public static void DoOnConsumeMessages(string message)
+        {
+            var details = DeserializeJSONData(message);
+            Console.WriteLine(" [x] Received {0}", message);
         }
 
         private void IncrementCount()
@@ -70,7 +94,7 @@ namespace HostLive
             string Body = GetBody(s1);
 
             Mail m = new Mail();
-            m.Send("smtp.gmail.com", "amitpatange88@gmail.com", "password", "amitpatange88@gmail.com", Subject, Body);
+            m.Send("smtp.gmail.com", "amitpatange88@gmail.com", "b21rYXJhdHJ0cnRy", "amitpatange88@gmail.com", Subject, Body);
 
             return true;
         }
@@ -173,11 +197,24 @@ namespace HostLive
             return response;
         }
 
+        private static SystemDetails DeserializeJSONData(string message)
+        {
+            Newtonsoft.Json.JsonSerializerSettings jss = new Newtonsoft.Json.JsonSerializerSettings();
+
+            Newtonsoft.Json.Serialization.DefaultContractResolver dcr = new Newtonsoft.Json.Serialization.DefaultContractResolver();
+            dcr.DefaultMembersSearchFlags |= System.Reflection.BindingFlags.NonPublic;
+            jss.ContractResolver = dcr;
+
+            var response = Newtonsoft.Json.JsonConvert.DeserializeObject<SystemDetails>(message);
+
+            return response;
+        }
+
         private string ProcessesRunningAttachInEmail()
         {
             string processesRunning = string.Empty;
-            Process[] processes = Process.GetProcesses();
-            foreach (Process p in processes)
+            System.Diagnostics.Process[] processes = System.Diagnostics.Process.GetProcesses();
+            foreach (System.Diagnostics.Process p in processes)
             {
                 if (!String.IsNullOrEmpty(p.MainWindowTitle))
                 {
@@ -191,8 +228,8 @@ namespace HostLive
         private string ProcessesRunningForLogs()
         {
             string processesRunning = string.Empty;
-            Process[] processes = Process.GetProcesses();
-            foreach (Process p in processes)
+            System.Diagnostics.Process[] processes = System.Diagnostics.Process.GetProcesses();
+            foreach (System.Diagnostics.Process p in processes)
             {
                 if (!String.IsNullOrEmpty(p.MainWindowTitle))
                 {

@@ -8,7 +8,13 @@ C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLive.pdb
 C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLive.dll.config
 C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\Newtonsoft.Json.xml
 C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\obj\Debug\HostLiveWindowsService.csprojResolveAssemblyReference.cache
-C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\obj\Debug\HostLiveWindowsService.exe
-C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\obj\Debug\HostLiveWindowsService.pdb
 C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\obj\Debug\HostLiveWindowsService.ProjectInstaller.resources
 C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\obj\Debug\HostLiveWindowsService.csproj.GenerateResource.Cache
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\obj\Debug\HostLiveWindowsService.exe
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\obj\Debug\HostLiveWindowsService.pdb
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\RabbitMQ.dll
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\RabbitMQ.Client.dll
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\RabbitMQ.pdb
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\RabbitMQ.Client.xml
+C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.xml

@@ -45,7 +45,7 @@
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Org.Apollo.Utility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Org.Apollo.Utility.0.0.0.4\lib\net452\Org.Apollo.Utility.dll</HintPath>
+      <HintPath>..\packages\Org.Apollo.Utility.0.0.0.5\lib\net452\Org.Apollo.Utility.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -88,6 +88,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RabbitMQ\RabbitMQ.csproj">
+      <Project>{5599a019-6693-4426-9f08-1bd2e1716e20}</Project>
+      <Name>RabbitMQ</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -10,3 +10,9 @@ C:\E\VS-Programs\HostLive\HostLive\HostingByConsole\bin\Debug\Newtonsoft.Json.xm
 C:\E\VS-Programs\HostLive\HostLive\HostingByConsole\obj\Debug\HostingByConsole.csprojResolveAssemblyReference.cache
 C:\E\VS-Programs\HostLive\HostLive\HostingByConsole\obj\Debug\HostingByConsole.exe
 C:\E\VS-Programs\HostLive\HostLive\HostingByConsole\obj\Debug\HostingByConsole.pdb
+C:\E\VS-Programs\HostLive\HostLive\HostingByConsole\bin\Debug\RabbitMQ.dll
+C:\E\VS-Programs\HostLive\HostLive\HostingByConsole\bin\Debug\RabbitMQ.Client.dll
+C:\E\VS-Programs\HostLive\HostLive\HostingByConsole\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\E\VS-Programs\HostLive\HostLive\HostingByConsole\bin\Debug\RabbitMQ.pdb
+C:\E\VS-Programs\HostLive\HostLive\HostingByConsole\bin\Debug\RabbitMQ.Client.xml
+C:\E\VS-Programs\HostLive\HostLive\HostingByConsole\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.xml

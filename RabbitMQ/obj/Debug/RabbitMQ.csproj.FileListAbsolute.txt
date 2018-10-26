@@ -1,0 +1,11 @@
+C:\E\VS-Programs\HostLive\HostLive\RabbitMQ\bin\Debug\RabbitMQ.dll
+C:\E\VS-Programs\HostLive\HostLive\RabbitMQ\bin\Debug\RabbitMQ.pdb
+C:\E\VS-Programs\HostLive\HostLive\RabbitMQ\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\E\VS-Programs\HostLive\HostLive\RabbitMQ\bin\Debug\Newtonsoft.Json.dll
+C:\E\VS-Programs\HostLive\HostLive\RabbitMQ\bin\Debug\RabbitMQ.Client.dll
+C:\E\VS-Programs\HostLive\HostLive\RabbitMQ\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.xml
+C:\E\VS-Programs\HostLive\HostLive\RabbitMQ\bin\Debug\Newtonsoft.Json.xml
+C:\E\VS-Programs\HostLive\HostLive\RabbitMQ\bin\Debug\RabbitMQ.Client.xml
+C:\E\VS-Programs\HostLive\HostLive\RabbitMQ\obj\Debug\RabbitMQ.dll
+C:\E\VS-Programs\HostLive\HostLive\RabbitMQ\obj\Debug\RabbitMQ.pdb
+C:\E\VS-Programs\HostLive\HostLive\RabbitMQ\obj\Debug\RabbitMQ.csprojResolveAssemblyReference.cache
