@@ -24,7 +24,6 @@ namespace HostLive
         public delegate void _CallbackConsumerDel(string message);
         public static _CallbackConsumerDel _callback = new _CallbackConsumerDel(HostLive.DoOnConsumeMessages);
 
-
         /// <summary>
         /// Set Entry point : First Route method which will check below things.
         /// 1. On System start we will insert log in to C:\ServiceLogs\HostLive.txt
@@ -56,7 +55,6 @@ namespace HostLive
                 LastRecordedTime = s1.PreciseTimeStamp;
                 string systemLog = SerializeJSONData(s1);
                 IsDone = HostFileUtility.Instance.WriteLog(systemLog);
-
 
                 if (Internet.IsConnectionActive())
                 {
