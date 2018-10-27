@@ -8,3 +8,4 @@ C:\E\VS-Programs\HostLive\HostLive\RabbitMQ\bin\Debug\Newtonsoft.Json.xml
 C:\E\VS-Programs\HostLive\HostLive\RabbitMQ\bin\Debug\RabbitMQ.Client.xml
 C:\E\VS-Programs\HostLive\HostLive\RabbitMQ\obj\Debug\RabbitMQ.dll
 C:\E\VS-Programs\HostLive\HostLive\RabbitMQ\obj\Debug\RabbitMQ.pdb
+C:\E\VS-Programs\HostLive\HostLive\RabbitMQ\obj\Debug\RabbitMQ.csprojResolveAssemblyReference.cache

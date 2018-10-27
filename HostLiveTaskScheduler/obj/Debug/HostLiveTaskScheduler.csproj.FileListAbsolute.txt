@@ -3,3 +3,4 @@ C:\E\VS-Programs\HostLive\HostLive\HostLiveTaskScheduler\bin\Debug\HostLiveTaskS
 C:\E\VS-Programs\HostLive\HostLive\HostLiveTaskScheduler\bin\Debug\HostLiveTaskScheduler.pdb
 C:\E\VS-Programs\HostLive\HostLive\HostLiveTaskScheduler\obj\Debug\HostLiveTaskScheduler.exe
 C:\E\VS-Programs\HostLive\HostLive\HostLiveTaskScheduler\obj\Debug\HostLiveTaskScheduler.pdb
+C:\E\VS-Programs\HostLive\HostLive\HostLiveTaskScheduler\obj\Debug\HostLiveTaskScheduler.csprojResolveAssemblyReference.cache
