@@ -59,3 +59,50 @@ Affected parameters are:
    logfile = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.InstallLog
    assemblypath = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe
    logtoconsole = 
+Uninstalling assembly 'C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.InstallLog
+   assemblypath = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe
+Removing EventLog source HostLive.
+An exception occurred during the uninstallation of the System.Diagnostics.EventLogInstaller installer.
+System.Security.SecurityException: Requested registry access is not allowed.
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.InstallLog
+   assemblypath = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe
+   logtoconsole = 
+Installing service HostLive...
+Creating EventLog source HostLive in log Application...
+Rolling back assembly 'C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.InstallLog
+   assemblypath = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe
+   logtoconsole = 
+Restoring event log to previous state for source HostLive.
+Uninstalling assembly 'C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.InstallLog
+   assemblypath = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe
+Removing EventLog source HostLive.
+Service HostLive is being removed from the system...
+Service HostLive was successfully removed from the system.
+Installing assembly 'C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.InstallLog
+   assemblypath = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe
+   logtoconsole = 
+Installing service HostLive...
+Service HostLive has been successfully installed.
+Creating EventLog source HostLive in log Application...
+Committing assembly 'C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.InstallLog
+   assemblypath = C:\E\VS-Programs\HostLive\HostLive\HostLiveWindowsService\bin\Debug\HostLiveWindowsService.exe
+   logtoconsole = 

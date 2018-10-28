@@ -19,7 +19,7 @@ namespace HostLive
     public class HostLive : IHostLive
     {
         private static string FilePathSecrets = @"C:\ServiceLogs\keys\HostLiveSecrets.txt";
-        private static int SystemContinuosOnCount = 1;
+        private static int SystemContinuosOnCount = 0;
         private static DateTime LastRecordedTime;
         public delegate void _CallbackConsumerDel(string message);
         public static _CallbackConsumerDel _callback = new _CallbackConsumerDel(HostLive.DoOnConsumeMessages);
@@ -122,11 +122,6 @@ namespace HostLive
             return true;
         }
 
-        private string GetSubjectLine()
-        {
-            return string.Format("HostLive Notification : Your system is booted up and running since {0}+ hours.", SystemContinuosOnCount);
-        }
-
         private SystemDetails GetSystemDetails()
         {
             SystemDetails s = new SystemDetails()
@@ -207,17 +202,32 @@ namespace HostLive
             return processesRunning;
         }
 
+        private string GetSubjectLine()
+        {
+            string subject = string.Empty;
+            if (SystemContinuosOnCount == 0)
+            {
+                subject += "HostLive Notification : Your system is just come online.";
+            }
+            else
+            {
+                subject += string.Format("HostLive Notification : Your system is running since {0}+ hours.", SystemContinuosOnCount);
+            }
+
+            return subject;
+        }
+
         private string GetBody(SystemDetails s1)
         {
             string body = string.Empty;
 
-            if (SystemContinuosOnCount == 1)
+            if (SystemContinuosOnCount == 0)
             {
-                body += "Here are the system booted up details, This is first time system has started.<br>";
+                body += "Your system has just boot up. Would you mind take a look at this.<br>";
             }
             else
             {
-                body += string.Format("This is booted up system is online since {0}+ hours. <br>", SystemContinuosOnCount);
+                body += string.Format("Your system is online since {0}+ hours. <br>", SystemContinuosOnCount);
             }
 
             body += "Here are system details : <br><br>";
