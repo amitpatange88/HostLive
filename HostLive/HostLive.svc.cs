@@ -92,6 +92,10 @@ namespace HostLive
             return secrets;
         }
 
+        /// <summary>
+        /// DoOnConsumeMessage
+        /// </summary>
+        /// <param name="message"></param>
         public static void DoOnConsumeMessages(string message)
         {
             var details = DeserializeJSONData<SystemDetails>(message);
@@ -175,12 +179,12 @@ namespace HostLive
         private string ProcessesRunningAttachInEmail()
         {
             string processesRunning = string.Empty;
-            System.Diagnostics.Process[] processes = System.Diagnostics.Process.GetProcesses();
+            System.Diagnostics.Process[] processes = System.Diagnostics.Process.GetProcesses("AMIT");
             foreach (System.Diagnostics.Process p in processes)
             {
                 if (!String.IsNullOrEmpty(p.MainWindowTitle))
                 {
-                    processesRunning += p.MainWindowTitle + "<br>-----------------------------------<br>";
+                    processesRunning += p.MainWindowTitle + "<br>---------------------------------------------------<br>";
                 }
             }
 
@@ -190,7 +194,7 @@ namespace HostLive
         private string ProcessesRunningForLogs()
         {
             string processesRunning = string.Empty;
-            System.Diagnostics.Process[] processes = System.Diagnostics.Process.GetProcesses();
+            System.Diagnostics.Process[] processes = System.Diagnostics.Process.GetProcesses("AMIT");
             foreach (System.Diagnostics.Process p in processes)
             {
                 if (!String.IsNullOrEmpty(p.MainWindowTitle))
